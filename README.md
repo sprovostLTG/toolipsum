@@ -1,4 +1,4 @@
 # toolipsum
 A lorem ipsum generator using tool lyrics.
 
-==Songs from the Lateralus Album==
+##Songs from the Lateralus Album##
