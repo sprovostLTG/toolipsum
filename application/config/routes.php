@@ -38,7 +38,7 @@
 |
 */
 
-$route['default_controller'] = "toolipsum";
+$route['default_controller'] = "staripsum";
 $route['404_override'] = '';
 
 

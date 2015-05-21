@@ -1,1 +1,3 @@
-<h1>This is where the generator is going to live.</h1>
+<div class="generator">
+	<h1>This is where the generator will live.</h1>
+</div>

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Learning Library</title>
+  <title>Toolipsum</title>
   <meta name="description" content="PHP Framework for PRPL">
   <meta name="author" content="SitePoint">
 
