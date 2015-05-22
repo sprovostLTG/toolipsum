@@ -3,12 +3,6 @@
 class Staripsum extends CI_Controller {
 	//Render the default view
 	public function index(){
-		$this->load->view('generator');
-	}
-
-
-	//Generate starwarsipsum based on user input on the front end.
-	function generate(){
 		$this->load->helper('form');
 		//Populate Characters
 		$this->load->model('Character');
