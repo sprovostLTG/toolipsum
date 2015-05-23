@@ -4,14 +4,16 @@ class Generate extends CI_Controller {
 	//Generate starwarsipsum based on user input on the front end.
 	public function index(){
 
+
+	 	$this->load->view('generated_output');
+
 		// Get checkbox values from the front end.
 		$character_name_choices = $this->input->post('character_id');
 
+		// Get the number of paragraphs they wanted
 		$paragraphChoice = $this->input->post('num_paragraphs');
 
-		echo $paragraphChoice . ' <br /><br />';
 		// Build the DB query.
-
 		if(!empty($character_name_choices)){
 			$query = 'SELECT * FROM characters
 	           WHERE character_name IN ("' . implode('", "', $character_name_choices) . '")';
@@ -31,7 +33,7 @@ class Generate extends CI_Controller {
 		}
 
 		// Blow up the string like a star destroyer.
-		$exploded_array_by_periods = preg_split('/[\n.?](.. )/', $quote_pool);
+		$exploded_array_by_periods = preg_split('/[\n\.\?\!]/', $quote_pool);
 
 		//Mix up the quotes
 		shuffle($exploded_array_by_periods);
@@ -41,23 +43,32 @@ class Generate extends CI_Controller {
 		$paragraphCount = 0;
 
 		for($count = 0; $count <= $lineCount; $count++){
-			echo $exploded_array_by_periods[$count] . ".";
-
+			//At the beginning of the loop, get the count of the string.
 			$stringCount = str_word_count($exploded_array_by_periods[$count]);
+			//Add it to the word count
 			$wordCount += $stringCount;
 
+			// If the wordcount in the paragraph is between 140 and 180 characters,
+			// break the paragraph, reset the paragraph count, and build another one.
+
 			if($wordCount >= 140 && $wordCount <= 185){
+
+				// echo $paragraphCount;
 				echo '<br /><br />';
 				$paragraphCount++;
-			}
+				$wordCount = 0;
 
-			if($paragraphCount > $paragraphChoice){
-				break;
+				// If the number of paragraphs is more than the amount specified, 
+				// Stop the loop.
+				if($paragraphCount > $paragraphChoice - 1){
+					break;
+				}
+			} else {
+				// if the string is empty, dont show it.
+				if(!empty($exploded_array_by_periods[$count] )){
+					echo $exploded_array_by_periods[$count] . ". ";
+				}
 			}
 		}
-
-		
-
-	 	$this->load->view('generated_output');
 	}
 }
