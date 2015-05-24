@@ -12,8 +12,3 @@
   -webkit-transform: rotateX(53deg);
           transform: rotateX(53deg);
 }
-
-.intro {
-  -webkit-perspective: 360px;
-          perspective: 360px;
-}
