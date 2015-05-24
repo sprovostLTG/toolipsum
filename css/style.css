@@ -1,0 +1,19 @@
+.intro {
+  position: relative;
+  padding: 10px;
+  -webkit-perspective: 360px;
+          perspective: 360px;
+}
+.intro .text {
+  padding: 50px;
+  position: absolute;
+  color: yellow;
+  font-weight: bold;
+  -webkit-transform: rotateX(53deg);
+          transform: rotateX(53deg);
+}
+
+.intro {
+  -webkit-perspective: 360px;
+          perspective: 360px;
+}

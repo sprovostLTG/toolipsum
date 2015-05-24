@@ -1,6 +1,8 @@
 .intro{
-	position: relative;padding: 10px;-webkit-perspective: 362px;perspective: 360px;
+	position: relative;padding: 10px;perspective: 360px;
 	.text{
-		padding: 50px;position: absolute; color: yellow;font-weight: bold;-webkit-transform: rotateX(80deg);transform: rotateX(53deg);
-	}
+		padding: 50px;position: absolute; color: yellow;font-weight: bold;transform: rotateX(53deg);
+	} 
 }
+
+@import "modern";
