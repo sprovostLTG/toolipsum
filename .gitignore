@@ -1,5 +1,11 @@
 .DS_Store
 
+node_modules
+.npm-debug.log
+tmp
+.sass-cache
+*.css.map
+
 application/cache/*
 !application/cache/index.html
 !application/cache/.htaccess
