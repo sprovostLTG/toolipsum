@@ -1,0 +1,19 @@
+{
+  "name": "staripsum",
+  "version": "1.0.0",
+  "description": "A lorem ipsum generator whose content is composed of star wars quotes from a variety of characters.",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sprovostLTG/toolipsum.git"
+  },
+  "author": "Shane Provost",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sprovostLTG/toolipsum/issues"
+  },
+  "homepage": "https://github.com/sprovostLTG/toolipsum"
+}
