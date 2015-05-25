@@ -21,13 +21,13 @@
 			<div>
 				<?php 
 					$opts = array(
-						1 => 'One',
-						2 => 'Two',
-						3 => 'Three',
-						4 => 'Four',
-						5 => 'Five',
+						"1" => 'One',
+						"2" => 'Two',
+						"3" => 'Three',
+						"4" => 'Four',
+						"5" => 'Five',
 					);
-					echo form_dropdown('num_paragraphs', $opts); 
+					echo form_dropdown('num_paragraphs', $opts, "3"); 
 
 				?>
 			</div>

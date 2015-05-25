@@ -23,6 +23,6 @@
 <body>
   <div id="header">
     <a href="/staripsum"><img src="../css/images/main-logo.png" /></a>
-    <a href="/staripsum" class="yellow bold">Star(t) over.</a>
+    <a href="/staripsum" class="restart">Star(t) over.</a>
   </div>
 	<div class="container">

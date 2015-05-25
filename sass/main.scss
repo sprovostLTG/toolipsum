@@ -6,19 +6,23 @@ body{
 	#header{
 		text-align: center; padding-top: 30px;
 		img{width: 500px;}
+		.restart{color: $blue; text-shadow: 1px 1px 10px $ltBlue;}
 	}
 	form{
 		color: $yellow; padding-top: 30px; font-size: 32px;
-		.column{text-align: center;}
+		.column{
+			text-align: center;
+			label{color: $blue; text-shadow: 1px 1px 10px $ltBlue;}
+		}
 		.submit-button{
 			text-align: center; margin-top: 60px;
-			input{ background-color: transparent;border: 3px solid yellow;padding: 20px;font-size: 32px;}
+			input{ background-color: transparent;border: 3px solid $blue; box-shadow: 1px 1px 10px #59B6EF; padding: 20px;font-size: 32px;}
 		}
 	}
 	#introduction{
 		position: relative;padding: 10px;perspective: 175px; -webkit-transition: all 1s cubic-bezier(.08,1.06,.59,.98); transition: all 2s cubic-bezier(.08,1.06,.59,.98); 
 		.text{
-			padding: 20px;position: absolute; color: $yellow;font-weight: bold;transform: rotateX(20deg);
+			padding: 20px;position: absolute; color: $yellow;font-weight: bold;transform: rotateX(20deg); 
 		}
 	}
 }
