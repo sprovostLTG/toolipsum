@@ -1,4 +1,5 @@
 body {
+  font-size: 18px;
   background-image: url(images/space-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -13,6 +14,20 @@ body #header img {
 }
 body form {
   color: #ede230;
+  padding-top: 30px;
+}
+body form .column {
+  text-align: center;
+}
+body form .submit-button {
+  text-align: center;
+  margin-top: 60px;
+}
+body form .submit-button input {
+  background-color: transparent;
+  border: 3px solid yellow;
+  padding: 20px;
+  font-size: 32px;
 }
 body .intro {
   position: relative;

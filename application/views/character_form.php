@@ -1,7 +1,7 @@
 <?php echo validation_errors(); ?>
 <?php echo form_open('/generate'); ?>
 	<div class="row">
-		<div class="col-lg-4">
+		<div class="column col-lg-4">
 			<div>
 				<?php echo form_label('Select the Character You Want'); ?>
 			</div>
@@ -14,7 +14,7 @@
 			?>
 			</div>
 		</div>
-		<div class="col-lg-4">
+		<div class="column col-lg-4">
 			<div>
 				<?php echo form_label('How Many Paragraphs?', 'num_paragraphs'); ?>
 			</div>
@@ -32,7 +32,7 @@
 				?>
 			</div>
 		</div>
-		<div class="col-lg-4">
+		<div class="column col-lg-4">
 			<div>
 				<?php echo form_label('Start with "A long time ago, in a galaxy far away..."?', 'add_beginning'); ?>
 			</div>
@@ -41,7 +41,7 @@
 			</div>
 		</div>
 		<div class="clearfix"></div>
-		<div>
+		<div class="submit-button">
 			<?php echo form_submit('save', 'Get the Droids I\'m Looking For'); ?>
 		</div>
 	</div><!--end .row-->
