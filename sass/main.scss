@@ -1,6 +1,23 @@
-.intro{
-	position: relative;padding: 10px;perspective: 360px;
-	.text{
-		padding: 50px;position: absolute; color: yellow;font-weight: bold;transform: rotateX(53deg);
+@import "classes";
+
+$yellow: #ede230;
+
+body{
+	background-image: url(images/space-background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	#header{
+		text-align: center; padding-top: 30px;
+		img{width: 500px;}
+	}
+	form{
+		color: $yellow;
+	}
+	.intro{
+		position: relative;padding: 10px;perspective: 175px;
+		.text{
+			padding: 20px;position: absolute; color: $yellow;font-weight: bold;transform: rotateX(20deg);
+		}
 	}
 }

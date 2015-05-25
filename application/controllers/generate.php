@@ -89,6 +89,6 @@ class Generate extends CI_Controller {
 		
 		$this->load->view('layout/header');
 	 	$this->load->view('generated_output', $data);
-	 	$this->load->view('layout/header');
+	 	$this->load->view('layout/footer');
 	}
 }

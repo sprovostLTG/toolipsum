@@ -16,15 +16,17 @@ class Staripsum extends CI_Controller {
 		$this->form_validation->set_rules(array(
 			array(
 				'field' => 'num_paragraphs',
-				'label' => 'paragraph',
+				'label' => 'num_paragraphs',
 				'rules' => 'is_numeric',
 			),
 		));
 		$this->form_validation->set_error_delimiters('<div class="alert alert-error">', '</div>');
 		if(!$this->form_validation->run()){
+			$this->load->view('layout/header-home');
 			$this->load->view('character_form', array(
 				'character_options' => $character_options,
 			));
+			$this->load->view('layout/footer');
 		} else {
 			$this->load->view('generated_output');
 		}
