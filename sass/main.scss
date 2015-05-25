@@ -4,12 +4,12 @@ body{
 
 	font-family: 'Droid Sans', sans-serif !important; font-size: 18px; background-image: url(images/space-background.jpg);background-size: cover;background-repeat: no-repeat;background-attachment: fixed;
 	#header{
-		text-align: center; padding-top: 30px;
+		text-align: center; padding-top: 60px;
 		img{width: 500px;}
 		.restart{color: $blue; text-shadow: 1px 1px 10px $ltBlue;}
 	}
 	form{
-		color: $yellow; padding-top: 30px; font-size: 32px;
+		color: $yellow; padding-top: 60px; font-size: 32px;
 		.column{
 			text-align: center;
 			label{color: $blue; text-shadow: 1px 1px 10px $ltBlue;}
@@ -24,5 +24,5 @@ body{
 		.text{
 			padding: 20px;position: absolute; color: $yellow;font-weight: bold;transform: rotateX(20deg); 
 		}
-	}
+	} 
 }
