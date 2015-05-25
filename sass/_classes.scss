@@ -1,0 +1,18 @@
+$yellow: #ede230;
+.yellow{color: $yellow;}
+
+.bold{font-weight: bold;}
+.ttal{text-align: left;}
+
+.zoomOut{
+	transform: scale3d(7,7,7);
+}
+.zoomIn{
+	transform: scale3d(1,1,1);
+}
+.transp{
+	opacity: 0;
+}
+.opaque{
+	opacity: 1;
+}

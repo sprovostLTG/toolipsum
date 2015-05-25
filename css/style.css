@@ -1,4 +1,35 @@
+.yellow {
+  color: #ede230;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.ttal {
+  text-align: left;
+}
+
+.zoomOut {
+  -webkit-transform: scale3d(7, 7, 7);
+          transform: scale3d(7, 7, 7);
+}
+
+.zoomIn {
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+}
+
+.transp {
+  opacity: 0;
+}
+
+.opaque {
+  opacity: 1;
+}
+
 body {
+  font-family: 'Droid Sans', sans-serif !important;
   font-size: 18px;
   background-image: url(images/space-background.jpg);
   background-size: cover;
@@ -15,6 +46,7 @@ body #header img {
 body form {
   color: #ede230;
   padding-top: 30px;
+  font-size: 32px;
 }
 body form .column {
   text-align: center;
@@ -29,13 +61,14 @@ body form .submit-button input {
   padding: 20px;
   font-size: 32px;
 }
-body .intro {
+body #introduction {
   position: relative;
   padding: 10px;
   -webkit-perspective: 175px;
           perspective: 175px;
+  transition: all 2s cubic-bezier(0.08, 1.06, 0.59, 0.98);
 }
-body .intro .text {
+body #introduction .text {
   padding: 20px;
   position: absolute;
   color: #ede230;

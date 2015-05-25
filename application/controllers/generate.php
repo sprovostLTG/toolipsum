@@ -52,7 +52,7 @@ class Generate extends CI_Controller {
 		$results_string = "";
 
 		if($this->input->post('add_beginning')){
-			$results_string .= "A long time ago, in a galaxy far away... ";
+			$results_string .= "A long time ago, in a galaxy far, far away... ";
 		}
 
 		// loop throught the array so as to not duplicate sentences

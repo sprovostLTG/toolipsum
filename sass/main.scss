@@ -1,24 +1,22 @@
 @import "classes";
 
-$yellow: #ede230;
-
 body{
 
-	font-size: 18px; background-image: url(images/space-background.jpg);background-size: cover;background-repeat: no-repeat;background-attachment: fixed;
+	font-family: 'Droid Sans', sans-serif !important; font-size: 18px; background-image: url(images/space-background.jpg);background-size: cover;background-repeat: no-repeat;background-attachment: fixed;
 	#header{
 		text-align: center; padding-top: 30px;
 		img{width: 500px;}
 	}
 	form{
-		color: $yellow; padding-top: 30px;
+		color: $yellow; padding-top: 30px; font-size: 32px;
 		.column{text-align: center;}
 		.submit-button{
 			text-align: center; margin-top: 60px;
 			input{ background-color: transparent;border: 3px solid yellow;padding: 20px;font-size: 32px;}
 		}
 	}
-	.intro{
-		position: relative;padding: 10px;perspective: 175px;
+	#introduction{
+		position: relative;padding: 10px;perspective: 175px; -webkit-transition: all 1s cubic-bezier(.08,1.06,.59,.98); transition: all 2s cubic-bezier(.08,1.06,.59,.98); 
 		.text{
 			padding: 20px;position: absolute; color: $yellow;font-weight: bold;transform: rotateX(20deg);
 		}
