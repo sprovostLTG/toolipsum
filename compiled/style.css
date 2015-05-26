@@ -56,6 +56,7 @@ body form .column {
 body form .column label {
   color: #d4f2ff;
   text-shadow: 1px 1px 10px #59b6ef;
+  font-weight: normal !important;
 }
 body form .submit-button {
   text-align: center;

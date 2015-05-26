@@ -12,7 +12,7 @@ body{
 		color: $yellow; padding-top: 60px; font-size: 32px;
 		.column{
 			text-align: center;
-			label{color: $blue; text-shadow: 1px 1px 10px $ltBlue;}
+			label{color: $blue; text-shadow: 1px 1px 10px $ltBlue; font-weight: normal !important;}
 		}
 		.submit-button{
 			text-align: center; margin-top: 60px;
