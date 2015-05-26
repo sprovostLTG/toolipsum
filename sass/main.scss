@@ -9,7 +9,7 @@ body{
 		.restart{color: $blue; text-shadow: 1px 1px 10px $ltBlue;}
 	}
 	form{
-		color: $yellow; padding-top: 60px; font-size: 32px;
+		color: $yellow; padding-top: 60px; font-size: 32px; background-color: rgba(0, 0, 0, 0.4); box-shadow: 1px 1px 50px #000;
 		.column{
 			text-align: center;
 			label{color: $blue; text-shadow: 1px 1px 10px $ltBlue; font-weight: normal !important;}

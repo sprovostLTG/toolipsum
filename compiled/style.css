@@ -49,6 +49,8 @@ body form {
   color: #ede230;
   padding-top: 60px;
   font-size: 32px;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 50px #000;
 }
 body form .column {
   text-align: center;
