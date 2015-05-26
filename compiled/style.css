@@ -58,6 +58,9 @@ body form .column label {
   text-shadow: 1px 1px 10px #59b6ef;
   font-weight: normal !important;
 }
+body form .column select {
+  color: #343434;
+}
 body form .submit-button {
   text-align: center;
   margin-top: 60px;

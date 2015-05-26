@@ -13,6 +13,7 @@ body{
 		.column{
 			text-align: center;
 			label{color: $blue; text-shadow: 1px 1px 10px $ltBlue; font-weight: normal !important;}
+			select{color: $black;}
 		}
 		.submit-button{
 			text-align: center; margin-top: 60px;
