@@ -4,7 +4,7 @@ class Generate extends CI_Controller {
 	//Generate starwarsipsum based on user input on the front end.
 	public function index(){
 
-		//
+		$this->load->helper('url');
 
 		// Get checkbox values from the front end.
 		$character_name_choices = $this->input->post('character_id');

@@ -21,6 +21,6 @@
 
 <body>
   <div id="header">
-    <a href="/staripsum"><img src="css/images/main-logo.png" /></a>
+    <a href="<?php echo base_url(); ?>"><img src="css/images/main-logo.png" /></a>
   </div>
 	<div class="container">

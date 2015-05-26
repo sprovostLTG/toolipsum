@@ -3,6 +3,7 @@
 class Staripsum extends CI_Controller {
 	//Render the default view
 	public function index(){
+		$this->load->helper('url');
 		$this->load->helper('form');
 		//Populate Characters
 		$this->load->model('Character');

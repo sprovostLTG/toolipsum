@@ -22,7 +22,7 @@
 
 <body>
   <div id="header">
-    <a href="/staripsum"><img src="../css/images/main-logo.png" /></a>
-    <a href="/staripsum" class="restart">Star(t) over.</a>
+    <a href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>/css/images/main-logo.png" /></a>
+    <a href="<?php echo base_url(); ?>" class="restart">Star(t) over.</a>
   </div>
 	<div class="container">
